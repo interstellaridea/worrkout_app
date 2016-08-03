@@ -32,11 +32,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'ruby_dep', '~> 1.3.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
+  gem 'spring-commands-rspec'
   gem 'rspec-rails', '~> 3.2.3'
+  gem 'guard-rspec', require: false
 end
 
 group :development do
